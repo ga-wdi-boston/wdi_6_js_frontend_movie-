@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link href="css/simple.css" rel="stylesheet" type="text/css" media="all">
+    <script src='js/jquery.js'></script>
+    <!-- <script src='js/movie.js'></script>  -->
+    <!-- <script src='js/movie_list.js'></script> -->
+    <!-- <script src='js/main.js'></script> -->
+  </head>
+  <body>
+    <h3>Movie Review</h3>
+    <div id='container'>
+
+      <!-- Ajax Loading Spinner-->
+      <div id="ajaxSpinnerContainer" class='centered'>
+        <img src="images/ajax-loader.gif" id="ajaxSpinnerImage" title="working...\">
+      </div>
+
+       <!-- Create a new Movie -->
+      <form id='new-movie' action='http://localhost:3000/movies'>
+        <input type='text' name='title' placeholder="Enter new title">
+        <input type='textarea' name='description' placeholder="Enter new description">
+        <input type='submit' value='Create Movie'>
+      </form>
+
+      <button id='get-movies'>Get Movies</button>
+      <div id='movie-count'>
+      </div>
+      <ul id='movies'>Movies
+      </ul>
+    </div>
+  </body>
+</html>
